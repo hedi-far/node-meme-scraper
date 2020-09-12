@@ -2,10 +2,10 @@
 
 This program scrapes the first ten memes from the website (https://memegen.link/examples). It creates a new directory called _memes_ and saves the files in there.
 
-## The following libraries were used:
+## The following libraries are used:
 
 - [cheerio](https://www.npmjs.com/package/cheerio)
-- [got]https://www.npmjs.com/package/got)
+- [got](https://www.npmjs.com/package/got)
 - [images-downloader](https://www.npmjs.com/package/images-downloader)
 
 ---
