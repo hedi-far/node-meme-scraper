@@ -1,0 +1,14 @@
+{
+  "name": "node-meme-scraper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hedi-far/node-meme-scraper.git",
+  "author": "Hedwig Farthofer <hedwig.farthofer@outlook.at>",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "got": "^10.4.0",
+    "images-downloader": "^1.0.3",
+    "jsdom": "^16.2.2"
+  }
+}
