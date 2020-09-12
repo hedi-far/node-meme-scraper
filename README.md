@@ -4,6 +4,6 @@ This program scrapes the first ten memes from the website (https://memegen.link/
 
 ## The following libraries were used:
 
-- [cheerio] (https://www.npmjs.com/package/cheerio)
-- [got] https://www.npmjs.com/package/got
-- [images-downloader] (https://www.npmjs.com/package/images-downloader)
+- [[cheerio] (https://www.npmjs.com/package/cheerio)]
+- [[got] https://www.npmjs.com/package/got)]
+- [[images-downloader] (https://www.npmjs.com/package/images-downloader)]
