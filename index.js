@@ -2,7 +2,6 @@
 const fs = require('fs');
 const cheerio = require('cheerio');
 const got = require('got');
-const { images } = require('images-downloader');
 const download = require('images-downloader').images;
 
 //Create memes-folder
