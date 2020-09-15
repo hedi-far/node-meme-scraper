@@ -10,4 +10,4 @@ This program scrapes the first ten memes from the website (https://memegen.link/
 
 ---
 
-[![Run on Repl.it](https://repl.it/badge/github/hedi-far/node-meme-scraper)](https://repl.it/github/hedi-far/node-meme-scraper)
+[![Run on Repl.it](https://repl.it/badge/github/hedi-far/node-meme-scraper)](https://repl.it/@hedifarthofer/node-meme-scraper)
