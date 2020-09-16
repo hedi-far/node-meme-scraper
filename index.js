@@ -1,21 +1,21 @@
-//import libraries
+// import libraries
 const fs = require('fs');
 const cheerio = require('cheerio');
 const got = require('got');
 const download = require('images-downloader').images;
+const path = require('path');
 
-//Create memes-folder
-fs.mkdir('./memes', function (err) {
+// create memes-folder
+fs.mkdir(path.join(__dirname, `./memes`), { recursive: true }, (err) => {
   if (err) {
-    console.log(err);
-  } else {
-    console.log('New directory successfully created.');
+    return console.error(err);
   }
+  console.log('Directory created successfully!');
 });
 
-//download paths to pictures from website via got and cheerio
-
-let imagesArray = []; //declare empty array
+// download paths to pictures from website via got and cheerio
+// declare empty array
+const imagesArray = [];
 
 const getMemeUrl = 'https://memegen.link/examples';
 
@@ -26,8 +26,8 @@ got(getMemeUrl)
     $('img').each((i, img) => {
       let scrapedMeme = `https://api.memegen.link/images` + img.attribs.src;
 
-      index = scrapedMeme.lastIndexOf('?');
-      if (index > 0) scrapedMeme = scrapedMeme.substring(0, index); //shorten url after '?'
+      const index = scrapedMeme.lastIndexOf('?');
+      if (index > 0) scrapedMeme = scrapedMeme.substring(0, index); // shorten url after '?'
 
       imagesArray.push(scrapedMeme); //push links into array
 
@@ -36,9 +36,7 @@ got(getMemeUrl)
       }
     });
 
-    //console.log(imagesArray);
-
-    //files will be downloaded to 'memes'
+    // files will be downloaded to 'memes'
     const dest = './memes';
 
     download(imagesArray, dest)
